@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop BJ — Matériels Informatiques, Électroménager &amp; Licences
+      Microsoft | Cotonou</title>
+    <meta name="description" content="Boutique en ligne de matériels informatiques, électroménager et licences Microsoft Lifetime à Cotonou, Bénin. Paiement MTN Mobile Money.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&amp;display=swap"
+      rel="stylesheet">
+    <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brand:#F59E0B;--brand-dark:#B45309;--brand-light:#FEF3C7;
+  --navy:#0F172A;--navy2:#1E293B;--navy3:#334155;
+  --green:#16A34A;--green-light:#DCFCE7;
+  --red:#DC2626;--red-light:#FEE2E2;
+  --blue:#2563EB;--blue-light:#DBEAFE;
+  --surface:#FFFFFF;--bg:#F1F5F9;--bg2:#E2E8F0;
+  --text:#0F172A;--muted:#64748B;--muted2:#94A3B8;
+  --border:rgba(15,23,42,0.1);--border2:rgba(15,23,42,0.06);
+  --radius:14px;--radius-sm:8px;--radius-lg:20px;
+  --shadow:0 2px 16px rgba(15,23,42,0.08);
+  --shadow-lg:0 8px 40px rgba(15,23,42,0.14);
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:'DM Sans',sans-serif}
+input,select,textarea{font-family:'DM Sans',sans-serif}
+img{max-width:100%;display:block}
+
+/* TOPBAR */
+.topbar{background:var(--navy);color:rgba(255,255,255,0.75);font-size:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.topbar-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.topbar-item{display:flex;align-items:center;gap:6px}
+.topbar-item svg{width:13px;height:13px;opacity:.6}
+.mtn-badge{background:var(--brand);color:var(--navy);font-weight:700;font-size:11px;padding:2px 10px;border-radius:20px;letter-spacing:.4px}
+.whatsapp-badge{background:#25D366;color:#fff;font-weight:700;font-size:11px;padding:2px 10px;border-radius:20px}
+
+/* HEADER */
+header{background:var(--navy);position:sticky;top:0;z-index:50;border-bottom:2px solid var(--brand)}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:20px;min-height:70px}
+.logo{font-family:'Sora',sans-serif;font-size:24px;font-weight:800;color:#fff;white-space:nowrap;letter-spacing:-0.5px}
+.logo span{color:var(--brand)}
+.logo sub{font-size:11px;font-weight:500;opacity:.6;vertical-align:bottom;margin-left:2px}
+.search-wrap{flex:1;max-width:540px}
+.search-bar{display:flex;background:rgba(255,255,255,0.09);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,0.14);transition:border-color .2s}
+.search-bar:focus-within{border-color:var(--brand)}
+.search-bar input{flex:1;background:transparent;border:none;outline:none;padding:10px 18px;color:#fff;font-size:13.5px}
+.search-bar input::placeholder{color:rgba(255,255,255,0.38)}
+.search-bar button{background:var(--brand);border:none;padding:10px 20px;color:var(--navy);font-weight:700;font-size:13px;border-radius:0 30px 30px 0;display:flex;align-items:center;gap:6px;transition:background .15s}
+.search-bar button:hover{background:#FBBF24}
+.header-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
+.btn-cart{background:var(--brand);color:var(--navy);border:none;border-radius:30px;padding:9px 20px;font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:8px;transition:background .15s}
+.btn-cart:hover{background:#FBBF24}
+.cart-badge{background:var(--navy);color:var(--brand);border-radius:50%;width:20px;height:20px;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:800}
+.btn-whatsapp{background:#25D366;color:#fff;border:none;border-radius:30px;padding:9px 18px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;transition:background .15s}
+.btn-whatsapp:hover{background:#22C55E}
+
+/* NAV */
+nav.categories{background:var(--surface);border-bottom:1px solid var(--border);overflow-x:auto;position:sticky;top:70px;z-index:40}
+nav.categories::-webkit-scrollbar{height:3px}
+nav.categories::-webkit-scrollbar-thumb{background:var(--brand);border-radius:3px}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;gap:0}
+.nav-inner button{background:none;border:none;border-bottom:3px solid transparent;padding:13px 18px;font-size:13.5px;font-weight:500;white-space:nowrap;color:var(--muted);transition:color .15s,border-color .15s}
+.nav-inner button:hover{color:var(--navy)}
+.nav-inner button.active{color:var(--navy);border-bottom-color:var(--brand);font-weight:600}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0F172A 0%,#1a3a5c 55%,#063222 100%);padding:48px 24px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;position:relative;flex-wrap:wrap}
+.hero-text{max-width:580px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);border-radius:30px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--brand);margin-bottom:18px;letter-spacing:.4px}
+.hero-title{font-family:'Sora',sans-serif;font-size:clamp(26px,4vw,38px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:14px;letter-spacing:-0.5px}
+.hero-title span{color:var(--brand)}
+.hero-sub{color:rgba(255,255,255,0.6);font-size:15px;line-height:1.7;margin-bottom:24px;max-width:480px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-hero-primary{background:var(--brand);color:var(--navy);border:none;border-radius:30px;padding:13px 28px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;transition:background .15s,transform .15s}
+.btn-hero-primary:hover{background:#FBBF24;transform:translateY(-1px)}
+.btn-hero-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.3);border-radius:30px;padding:13px 28px;font-size:14px;font-weight:500;transition:border-color .15s}
+.btn-hero-outline:hover{border-color:rgba(255,255,255,0.6)}
+.hero-cards{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 24px;text-align:center;min-width:140px}
+.hero-stat .num{font-family:'Sora',sans-serif;font-size:26px;font-weight:800;color:var(--brand);line-height:1}
+.hero-stat p{font-size:12px;color:rgba(255,255,255,0.55);margin-top:6px}
+.hero-stat.featured{background:rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.35)}
+
+/* MAIN */
+main{max-width:1280px;margin:0 auto;padding:32px 24px}
+
+/* PROMO BANNER */
+.promo-banner{background:linear-gradient(90deg,var(--green) 0%,#15803d 100%);border-radius:var(--radius);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.promo-banner .text{color:#fff}
+.promo-banner .text strong{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;display:block}
+.promo-banner .text span{font-size:13px;opacity:.85}
+.promo-banner .btn{background:#fff;color:var(--green);border:none;border-radius:30px;padding:9px 22px;font-weight:700;font-size:13px}
+
+/* SECTIONS */
+.section-title{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.section-title::before{content:'';display:inline-block;width:5px;height:22px;background:var(--brand);border-radius:4px}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.see-all-btn{background:none;border:1.5px solid var(--border);border-radius:30px;padding:6px 16px;font-size:13px;font-weight:600;color:var(--muted);transition:all .15s}
+.see-all-btn:hover{border-color:var(--brand);color:var(--brand-dark)}
+
+/* PRODUCT GRID */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;margin-bottom:40px}
+.product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:box-shadow .2s,transform .2s;position:relative}
+.product-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.product-img{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:58px;background:var(--bg);position:relative}
+.product-img.ms-bg{background:linear-gradient(135deg,#EFF6FF 0%,#DBEAFE 100%)}
+.product-img.electro-bg{background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%)}
+.product-img.soft-bg{background:linear-gradient(135deg,#FFF7ED 0%,#FEF3C7 100%)}
+.product-img.info-bg{background:linear-gradient(135deg,#F5F3FF 0%,#EDE9FE 100%)}
+.p-badge{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.4px}
+.badge-lifetime{background:var(--brand);color:var(--navy)}
+.badge-promo{background:var(--red);color:#fff}
+.badge-new{background:var(--green);color:#fff}
+.badge-hot{background:#7C3AED;color:#fff}
+.wishlist-btn{position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.9);border:none;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:14px;transition:background .15s}
+.wishlist-btn:hover{background:#fff}
+.product-body{padding:14px 15px}
+.product-name{font-size:13.5px;font-weight:600;color:var(--navy);line-height:1.35;margin-bottom:4px}
+.product-cat-tag{font-size:11px;color:var(--muted);margin-bottom:10px}
+.product-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.price-current{font-family:'Sora',sans-serif;font-size:18px;font-weight:700;color:var(--brand-dark)}
+.price-old{font-size:12px;color:var(--muted2);text-decoration:line-through}
+.discount-pct{font-size:11px;font-weight:700;color:var(--red);background:var(--red-light);padding:2px 6px;border-radius:4px}
+.product-actions{display:flex;gap:8px}
+.btn-add{flex:1;background:var(--navy);color:#fff;border:none;border-radius:var(--radius-sm);padding:9px 12px;font-size:12.5px;font-weight:600;transition:background .15s}
+.btn-add:hover{background:var(--brand);color:var(--navy)}
+.btn-add.added{background:var(--green)}
+.btn-detail{background:var(--bg);color:var(--navy);border:none;border-radius:var(--radius-sm);padding:9px 12px;font-size:13px;font-weight:500;transition:background .15s}
+.btn-detail:hover{background:var(--bg2)}
+
+/* MTN PAYMENT SECTION */
+.payment-section{background:var(--navy);border-radius:var(--radius-lg);padding:32px;margin-bottom:40px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.payment-left{flex:1;min-width:260px}
+.payment-left h2{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:10px}
+.payment-left p{color:rgba(255,255,255,0.6);font-size:14px;line-height:1.7;margin-bottom:18px}
+.payment-steps{display:flex;flex-direction:column;gap:10px}
+.payment-step{display:flex;align-items:flex-start;gap:12px;color:rgba(255,255,255,0.75);font-size:13.5px}
+.step-num{background:var(--brand);color:var(--navy);font-weight:800;font-size:12px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.payment-right{display:flex;flex-direction:column;gap:14px;flex-shrink:0}
+.mtn-card{background:rgba(245,158,11,0.12);border:1.5px solid rgba(245,158,11,0.3);border-radius:16px;padding:20px 26px;text-align:center}
+.mtn-card .mtn-logo-text{font-family:'Sora',sans-serif;font-size:18px;font-weight:900;color:var(--brand);letter-spacing:1px;margin-bottom:4px}
+.mtn-card .mtn-label{font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.mtn-card .mtn-num{font-family:'Sora',sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:1px}
+.mtn-card .mtn-name{font-size:12px;color:rgba(255,255,255,0.5);margin-top:5px}
+.whatsapp-card{background:rgba(37,211,102,0.12);border:1.5px solid rgba(37,211,102,0.3);border-radius:16px;padding:16px 20px;text-align:center}
+.whatsapp-card .wa-label{font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:.5px;text-transform:uppercase;margin-bottom:5px}
+.whatsapp-card .wa-num{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;color:#25D366}
+.whatsapp-card .wa-sub{font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px}
+
+/* HOW IT WORKS */
+.how-section{background:var(--surface);border-radius:var(--radius-lg);padding:32px;margin-bottom:40px}
+.how-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px;margin-top:20px}
+.how-step{text-align:center;padding:20px 14px}
+.how-icon{font-size:36px;margin-bottom:12px}
+.how-step h4{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.how-step p{font-size:12.5px;color:var(--muted);line-height:1.5}
+.how-step .step-num-big{font-family:'Sora',sans-serif;font-size:11px;font-weight:700;color:var(--brand);background:var(--brand-light);width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-bottom:10px}
+
+/* FOOTER */
+footer{background:var(--navy2);color:rgba(255,255,255,0.55);padding:40px 24px 24px;margin-top:40px}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:32px;margin-bottom:32px}
+.footer-brand .logo-footer{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-brand .logo-footer span{color:var(--brand)}
+.footer-brand p{font-size:13px;line-height:1.7}
+.footer-col h4{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col ul li{font-size:13px}
+.footer-col ul li a:hover{color:var(--brand)}
+.footer-contact p{font-size:13px;line-height:1.9}
+.footer-contact strong{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:12px}
+.footer-bottom strong{color:var(--brand)}
+
+/* MODALS */
+.overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,0.65);z-index:200;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+.overlay.open{display:flex}
+.modal{background:var(--surface);border-radius:var(--radius-lg);max-width:520px;width:100%;max-height:90vh;overflow-y:auto;position:relative;box-shadow:var(--shadow-lg)}
+.modal-header{padding:24px 28px 0;display:flex;justify-content:space-between;align-items:flex-start}
+.modal-header h2{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;color:var(--navy)}
+.modal-close{background:var(--bg);border:none;border-radius:50%;width:32px;height:32px;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s}
+.modal-close:hover{background:var(--bg2)}
+.modal-body{padding:20px 28px 28px}
+
+/* PRODUCT DETAIL MODAL */
+.detail-img{width:100%;height:180px;display:flex;align-items:center;justify-content:center;font-size:80px;border-radius:var(--radius);margin-bottom:16px}
+.detail-price{font-family:'Sora',sans-serif;font-size:30px;font-weight:800;color:var(--brand-dark);margin-bottom:6px}
+.detail-price-old{font-size:14px;color:var(--muted2);text-decoration:line-through;margin-bottom:14px}
+.detail-desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:18px}
+.detail-features{margin-bottom:18px}
+.detail-features h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.feature-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--muted);margin-bottom:5px}
+.feature-item::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+.mtn-pay-box{background:var(--navy);border-radius:12px;padding:16px;display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.mtn-circle{width:46px;height:46px;background:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:900;font-size:13px;color:var(--navy);flex-shrink:0}
+.mtn-pay-info{color:#fff}
+.mtn-pay-info .lbl{font-size:11px;color:rgba(255,255,255,0.5);margin-bottom:3px}
+.mtn-pay-info .val{font-family:'Sora',sans-serif;font-size:17px;font-weight:700}
+.btn-order-now{width:100%;background:var(--green);color:#fff;border:none;border-radius:30px;padding:14px;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-bottom:10px}
+.btn-order-now:hover{background:#15803d}
+.btn-add-cart-modal{width:100%;background:var(--navy);color:#fff;border:none;border-radius:30px;padding:13px;font-size:14px;font-weight:600;transition:background .15s}
+.btn-add-cart-modal:hover{background:var(--navy2)}
+
+/* ORDER FORM MODAL */
+.form-section{margin-bottom:16px}
+.form-section label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.form-section input,
+.form-section select,
+.form-section textarea{width:100%;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:11px 14px;font-size:14px;color:var(--navy);background:var(--bg);transition:border-color .15s;outline:none}
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus{border-color:var(--brand)}
+.form-section textarea{resize:vertical;min-height:80px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.order-summary-box{background:var(--bg);border-radius:var(--radius-sm);padding:14px;margin-bottom:16px}
+.order-summary-box h4{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.order-item{display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:6px}
+.order-item .name{color:var(--muted);max-width:220px}
+.order-item .price{font-weight:600;color:var(--navy)}
+.order-total{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:10px;margin-top:6px}
+.order-total .label{font-weight:600;color:var(--navy);font-size:14px}
+.order-total .total{font-family:'Sora',sans-serif;font-size:18px;font-weight:800;color:var(--brand-dark)}
+.payment-method-select{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.payment-opt{border:2px solid var(--border);border-radius:var(--radius-sm);padding:12px;text-align:center;cursor:pointer;transition:all .15s;background:var(--bg)}
+.payment-opt.selected{border-color:var(--brand);background:var(--brand-light)}
+.payment-opt .opt-icon{font-size:22px;margin-bottom:4px}
+.payment-opt .opt-label{font-size:12px;font-weight:600;color:var(--navy)}
+.btn-submit-order{width:100%;background:var(--green);color:#fff;border:none;border-radius:30px;padding:14px;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-top:14px}
+.btn-submit-order:hover{background:#15803d}
+.btn-submit-order:disabled{opacity:.6}
+
+/* SUCCESS MODAL */
+.success-icon{text-align:center;font-size:64px;margin:20px 0 12px}
+.success-msg{text-align:center;margin-bottom:24px}
+.success-msg h2{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.success-msg p{font-size:14px;color:var(--muted);line-height:1.7}
+.order-ref{background:var(--green-light);border:1px solid rgba(22,163,74,0.25);border-radius:var(--radius-sm);padding:14px;text-align:center;margin-bottom:18px}
+.order-ref .ref-label{font-size:11px;color:var(--green);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+.order-ref .ref-num{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:var(--navy)}
+.confirm-steps{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.confirm-step{display:flex;align-items:flex-start;gap:12px;font-size:13.5px;color:var(--muted)}
+.confirm-step .icon{font-size:20px;flex-shrink:0}
+.btn-confirm-whatsapp{width:100%;background:#25D366;color:#fff;border:none;border-radius:30px;padding:14px;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-bottom:10px}
+.btn-confirm-whatsapp:hover{background:#22C55E}
+.btn-close-success{width:100%;background:var(--bg);color:var(--navy);border:none;border-radius:30px;padding:13px;font-size:14px;font-weight:600;transition:background .15s}
+.btn-close-success:hover{background:var(--bg2)}
+
+/* CART SIDEBAR */
+.cart-overlay{display:none;position:fixed;inset:0;z-index:300;background:rgba(15,23,42,0.5)}
+.cart-overlay.open{display:block}
+.cart-panel{position:fixed;right:0;top:0;height:100%;width:400px;max-width:100%;background:var(--surface);box-shadow:var(--shadow-lg);z-index:301;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.cart-panel.open{transform:translateX(0)}
+.cart-head{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.cart-head h3{font-family:'Sora',sans-serif;font-size:18px;font-weight:700}
+.cart-close{background:var(--bg);border:none;border-radius:50%;width:34px;height:34px;font-size:16px;display:flex;align-items:center;justify-content:center}
+.cart-items{flex:1;overflow-y:auto;padding:16px 24px}
+.cart-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border2)}
+.cart-item-icon{font-size:36px;background:var(--bg);border-radius:var(--radius-sm);width:56px;height:56px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cart-item-info{flex:1}
+.cart-item-name{font-size:13.5px;font-weight:600;color:var(--navy);margin-bottom:3px;line-height:1.3}
+.cart-item-price{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--brand-dark);margin-bottom:8px}
+.cart-qty{display:flex;align-items:center;gap:8px}
+.qty-btn{background:var(--bg);border:1px solid var(--border);border-radius:6px;width:26px;height:26px;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.qty-btn:hover{background:var(--bg2)}
+.qty-num{font-size:14px;font-weight:600;min-width:20px;text-align:center}
+.cart-item-remove{background:none;border:none;color:var(--muted2);font-size:18px;line-height:1;padding:4px;transition:color .15s}
+.cart-item-remove:hover{color:var(--red)}
+.cart-empty{text-align:center;padding:60px 20px}
+.cart-empty .icon{font-size:52px;margin-bottom:12px}
+.cart-empty p{color:var(--muted);font-size:14px}
+.cart-footer{padding:20px 24px;border-top:1px solid var(--border);background:var(--surface)}
+.cart-total-row{display:flex;justify-content:space-between;margin-bottom:16px}
+.cart-total-label{font-size:14px;font-weight:600;color:var(--navy)}
+.cart-total-amount{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:var(--brand-dark)}
+.btn-checkout{width:100%;background:var(--green);color:#fff;border:none;border-radius:30px;padding:14px;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-bottom:10px}
+.btn-checkout:hover{background:#15803d}
+.btn-continue-shopping{width:100%;background:var(--bg);color:var(--navy);border:none;border-radius:30px;padding:12px;font-size:14px;font-weight:500;transition:background .15s}
+.btn-continue-shopping:hover{background:var(--bg2)}
+
+/* NOTIFICATIONS */
+.toast{position:fixed;bottom:24px;right:24px;background:var(--navy);color:#fff;border-radius:var(--radius);padding:14px 20px;font-size:14px;font-weight:500;z-index:1000;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg);transform:translateY(100px);opacity:0;transition:all .3s cubic-bezier(.4,0,.2,1);max-width:320px}
+.toast.show{transform:translateY(0);opacity:1}
+.toast .t-icon{font-size:18px;flex-shrink:0}
+
+/* SCROLL TO TOP */
+.scroll-top{position:fixed;bottom:24px;left:24px;background:var(--navy);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;display:none;align-items:center;justify-content:center;z-index:90;box-shadow:var(--shadow);transition:background .15s}
+.scroll-top:hover{background:var(--brand);color:var(--navy)}
+.scroll-top.visible{display:flex}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .topbar-inner .topbar-item:first-child{display:none}
+  .header-inner{flex-wrap:wrap;padding:10px 16px;gap:10px}
+  .search-wrap{order:3;max-width:100%;width:100%}
+  .header-actions{margin-left:0}
+  .hero-inner{flex-direction:column}
+  .hero-cards{justify-content:center}
+  .products-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  .form-row{grid-template-columns:1fr}
+  .cart-panel{width:100%}
+  .payment-section{flex-direction:column}
+  main{padding:20px 16px}
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.product-card{animation:fadeIn .3s ease forwards;opacity:0}
+.product-card:nth-child(1){animation-delay:.05s}
+.product-card:nth-child(2){animation-delay:.1s}
+.product-card:nth-child(3){animation-delay:.15s}
+.product-card:nth-child(4){animation-delay:.2s}
+.product-card:nth-child(5){animation-delay:.25s}
+.product-card:nth-child(6){animation-delay:.3s}
+.product-card:nth-child(7){animation-delay:.35s}
+.product-card:nth-child(8){animation-delay:.4s}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{position:fixed;bottom:80px;right:24px;background:#25D366;color:#fff;border:none;border-radius:50%;width:52px;height:52px;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);z-index:89;transition:transform .2s}
+.whatsapp-float:hover{transform:scale(1.1)}
+</style>
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+          Cotonou, Bénin &nbsp;|&nbsp; Livraison disponible dans tout le Bénin </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"> <span>Paiement
+            sécurisé :</span> <span class="mtn-badge">MTN MoMo</span> <span class="whatsapp-badge">WhatsApp</span>
+          <span>+229 01 62 44 75 97</span> </div>
+      </div>
+    </div>
+    <!-- HEADER -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">Tech<span>Shop</span><sub>BJ</sub></div>
+        <div class="search-wrap">
+          <div class="search-bar"> <input id="searchInput" placeholder="Rechercher un produit, logiciel, licence Microsoft..."
+              oninput="handleSearch(this.value)" type="text"> <button onclick="handleSearch(document.getElementById('searchInput').value)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+              Rechercher </button> </div>
+        </div>
+        <div class="header-actions"> <button class="btn-whatsapp" onclick="openWhatsApp('Bonjour, je viens de votre boutique TechShop BJ et j\'ai besoin d\'informations.')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            WhatsApp </button> <button class="btn-cart" onclick="openCart()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 8 18h12v-2H8.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+            Panier <span class="cart-badge" id="cartBadge">0</span> </button>
+        </div>
+      </div>
+    </header>
+    <!-- CATEGORY NAV -->
+    <nav class="categories">
+      <div class="nav-inner"> <button class="active" onclick="filterCat('all',this)">🏪
+          Tous les produits</button> <button onclick="filterCat('ms',this)">🪟
+          Licences Microsoft</button> <button onclick="filterCat('info',this)">💻
+          Informatique</button> <button onclick="filterCat('electro',this)">🏠
+          Électroménager</button> <button onclick="filterCat('soft',this)">🧩
+          Logiciels</button> <button onclick="filterCat('accessoire',this)">🖱️
+          Accessoires</button> <button onclick="filterCat('reseau',this)">📡
+          Réseau &amp; WiFi</button> <button onclick="filterCat('phone',this)">📱
+          Téléphones</button> </div>
+    </nav>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            N°1 des boutiques tech au Bénin </div>
+          <h1 class="hero-title">Licences <span>Microsoft Lifetime</span>,<br>
+            Matériels &amp; Électroménager<br>
+            à Cotonou</h1>
+          <p class="hero-sub">Obtenez vos logiciels originaux, ordinateurs,
+            téléphones et appareils électroniques. Livraison rapide à Cotonou et
+            dans tout le Bénin. Paiement simplifié par MTN Mobile Money.</p>
+          <div class="hero-ctas"> <button class="btn-hero-primary" onclick="filterCat('ms',document.querySelectorAll('.nav-inner button')[1])">
+              🪟 Licences Microsoft </button> <button class="btn-hero-outline"
+              onclick="document.getElementById('howSection').scrollIntoView({behavior:'smooth'})">
+              Comment commander ? </button> </div>
+        </div>
+        <div class="hero-cards">
+          <div class="hero-stat featured">
+            <div class="num">LIFETIME</div>
+            <p>Licences originales<br>
+              à vie garanties</p>
+          </div>
+          <div class="hero-stat">
+            <div class="num">50+</div>
+            <p>Produits<br>
+              disponibles</p>
+          </div>
+          <div class="hero-stat">
+            <div class="num">24h</div>
+            <p>Livraison express<br>
+              à Cotonou</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- PROMO BANNER -->
+      <div class="promo-banner">
+        <div class="text"> <strong>🎉 Offre spéciale — Forfait Bureau Complet</strong>
+          <span>Windows 11 Pro + Office 2021 Pro — Pack Lifetime : 30 000 FCFA
+            au lieu de 55 000 FCFA</span> </div>
+        <button class="btn" onclick="openOrderForm([1,2])">Commander ce pack</button>
+      </div>
+      <!-- SECTIONS PAR CATÉGORIE (vue accueil) -->
+      <div id="home-sections">
+        <div class="section-header">
+          <h2 class="section-title">🪟 Licences Microsoft Lifetime</h2>
+        </div>
+        <div class="products-grid" id="ms-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">💻 Matériels Informatiques</h2>
+        </div>
+        <div class="products-grid" id="info-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">🏠 Électroménager</h2>
+        </div>
+        <div class="products-grid" id="electro-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">🧩 Logiciels &amp; Sécurité</h2>
+        </div>
+        <div class="products-grid" id="soft-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">🖱️ Accessoires</h2>
+        </div>
+        <div class="products-grid" id="accessoire-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">📡 Réseau &amp; WiFi</h2>
+        </div>
+        <div class="products-grid" id="reseau-grid"></div>
+        <div class="section-header">
+          <h2 class="section-title">📱 Téléphones</h2>
+        </div>
+        <div class="products-grid" id="phone-grid"></div>
+      </div>
+      <!-- GRILLE DE FILTRAGE (catégorie unique ou recherche) -->
+      <div id="filter-section" style="display:none">
+        <div class="section-header">
+          <h2 class="section-title" id="filter-title">Résultats</h2>
+          <button class="see-all-btn" onclick="showAllSections()">← Tous les
+            produits</button> </div>
+        <div class="products-grid" id="filter-grid"></div>
+      </div>
+      <!-- PAYMENT SECTION -->
+      <div class="payment-section">
+        <div class="payment-left">
+          <h2>💛 Paiement simple avec MTN Mobile Money</h2>
+          <p>Pas besoin de carte bancaire. Réglez votre commande directement
+            depuis votre téléphone via MTN MoMo. Votre commande est confirmée et
+            traitée sous quelques minutes.</p>
+          <div class="payment-steps">
+            <div class="payment-step"><span class="step-num">1</span>Choisissez
+              vos produits et passez commande</div>
+            <div class="payment-step"><span class="step-num">2</span>Remplissez
+              le formulaire avec vos coordonnées</div>
+            <div class="payment-step"><span class="step-num">3</span>Effectuez
+              le paiement MTN MoMo au numéro indiqué</div>
+            <div class="payment-step"><span class="step-num">4</span>Envoyez la
+              capture de confirmation sur WhatsApp</div>
+            <div class="payment-step"><span class="step-num">5</span>Recevez
+              votre clé de licence ou votre livraison</div>
+          </div>
+        </div>
+        <div class="payment-right">
+          <div class="mtn-card">
+            <div class="mtn-logo-text">MTN MoMo</div>
+            <div class="mtn-label">Numéro de paiement</div>
+            <div class="mtn-num">+229 01 62 44 75 97</div>
+            <div class="mtn-name">TechShop BJ</div>
+          </div>
+          <div class="whatsapp-card">
+            <div class="wa-label">WhatsApp / Support</div>
+            <div class="wa-num">+229 01 62 44 75 97</div>
+            <div class="wa-sub">Envoyez votre reçu de paiement ici</div>
+          </div>
+        </div>
+      </div>
+      <!-- HOW IT WORKS -->
+      <div class="how-section" id="howSection">
+        <h2 class="section-title">Comment commander ?</h2>
+        <div class="how-grid">
+          <div class="how-step">
+            <div class="step-num-big">1</div>
+            <div class="how-icon">🛒</div>
+            <h4>Choisir un produit</h4>
+            <p>Parcourez notre catalogue et ajoutez vos produits au panier ou
+              commandez directement</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num-big">2</div>
+            <div class="how-icon">📝</div>
+            <h4>Remplir le formulaire</h4>
+            <p>Indiquez votre nom, numéro de téléphone, adresse et choisissez
+              votre mode de paiement</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num-big">3</div>
+            <div class="how-icon">📲</div>
+            <h4>Payer via MTN MoMo</h4>
+            <p>Composez *880# ou ouvrez votre app MTN et transférez le montant
+              au +229 01 62 44 75 97</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num-big">4</div>
+            <div class="how-icon">📸</div>
+            <h4>Envoyer la preuve</h4>
+            <p>Prenez une capture du reçu MTN et envoyez-la sur WhatsApp au même
+              numéro</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num-big">5</div>
+            <div class="how-icon">✅</div>
+            <h4>Confirmation</h4>
+            <p>Votre commande est validée. Clé envoyée sous 1h ou livraison sous
+              24h à Cotonou</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo-footer">Tech<span>Shop</span> BJ</div>
+            <p>Votre boutique de confiance pour les matériels informatiques,
+              électroménager et licences Microsoft au Bénin. Paiement MTN Mobile
+              Money.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Catégories</h4>
+            <ul>
+              <li><a href="#" onclick="filterCat('ms',document.querySelectorAll('.nav-inner button')[1])">Licences
+                  Microsoft</a></li>
+              <li><a href="#" onclick="filterCat('info',document.querySelectorAll('.nav-inner button')[2])">Matériels
+                  informatiques</a></li>
+              <li><a href="#" onclick="filterCat('electro',document.querySelectorAll('.nav-inner button')[3])">Électroménager</a></li>
+              <li><a href="#" onclick="filterCat('soft',document.querySelectorAll('.nav-inner button')[4])">Logiciels</a></li>
+              <li><a href="#" onclick="filterCat('phone',document.querySelectorAll('.nav-inner button')[7])">Téléphones</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Informations</h4>
+            <ul>
+              <li><a href="#howSection" onclick="document.getElementById('howSection').scrollIntoView({behavior:'smooth'})">Comment
+                  commander</a></li>
+              <li><a href="#" onclick="openWhatsApp('Bonjour, j\'ai une question sur la livraison.')">Livraison
+                  &amp; délais</a></li>
+              <li><a href="#" onclick="openWhatsApp('Bonjour, je souhaite des informations sur les garanties.')">Garanties
+                  produits</a></li>
+              <li><a href="#" onclick="openWhatsApp('Bonjour, j\'ai besoin du support technique.')">Support
+                  technique</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-contact">
+            <h4>Contact</h4>
+            <p> 📍 Cotonou, Bénin<br>
+              📞 <strong>+229 01 62 44 75 97</strong><br>
+              💛 MTN Mobile Money<br>
+              💬 WhatsApp disponible<br>
+              🕐 Lun–Sam 8h–20h </p>
+          </div>
+        </div>
+        <div class="footer-bottom"> <span>© 2025 <strong>TechShop BJ</strong>
+            — Tous droits réservés</span> <span>Paiement sécurisé · Licences
+            originales · Livraison rapide</span> </div>
+      </div>
+    </footer>
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <button class="whatsapp-float" onclick="openWhatsApp('Bonjour TechShop BJ 👋 Je viens de votre boutique en ligne et j\'ai besoin d\'aide.')"
+      title="Contacter sur WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+    </button>
+    <!-- SCROLL TOP -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="overlay" id="detailOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="detailTitle">Détail du produit</h2>
+          <button class="modal-close" onclick="closeOverlay('detailOverlay')">✕</button>
+        </div>
+        <div class="modal-body" id="detailBody"></div>
+      </div>
+    </div>
+    <!-- ORDER FORM MODAL -->
+    <div class="overlay" id="orderOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>📝 Formulaire de commande</h2>
+          <button class="modal-close" onclick="closeOverlay('orderOverlay')">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="order-summary-box" id="orderSummary"></div>
+          <div class="form-section"> <label>Nom complet *</label> <input id="f_name"
+              placeholder="Votre nom et prénom" type="text"> </div>
+          <div class="form-row">
+            <div class="form-section"> <label>Téléphone *</label> <input id="f_phone"
+                placeholder="+229 XX XX XX XX" type="tel"> </div>
+            <div class="form-section"> <label>WhatsApp</label> <input id="f_whatsapp"
+                placeholder="+229 XX XX XX XX" type="tel"> </div>
+          </div>
+          <div class="form-section"> <label>Ville / Quartier *</label> <input
+              id="f_address" placeholder="Ex: Cotonou, Akpakpa Centre" type="text">
+          </div>
+          <div class="form-section"> <label>Mode de livraison *</label>
+            <select id="f_delivery">
+              <option value="">-- Choisir --</option>
+              <option value="livraison_cotonou">Livraison à domicile — Cotonou
+                (2 000 FCFA)</option>
+              <option value="livraison_interieur">Livraison intérieur Bénin (5
+                000–10 000 FCFA)</option>
+              <option value="email">Envoi par e-mail/WhatsApp (logiciels &amp;
+                licences uniquement)</option>
+              <option value="retrait">Retrait en boutique — Cotonou (gratuit)</option>
+            </select>
+          </div>
+          <div class="form-section"> <label>Mode de paiement *</label>
+            <div class="payment-method-select">
+              <div class="payment-opt selected" id="opt-mtn" onclick="selectPayment('mtn')">
+                <div class="opt-icon">💛</div>
+                <div class="opt-label">MTN MoMo</div>
+              </div>
+              <div class="payment-opt" id="opt-wa" onclick="selectPayment('wa')">
+                <div class="opt-icon">💬</div>
+                <div class="opt-label">WhatsApp + MTN</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section"> <label>Message / Instructions
+              particulières</label> <textarea id="f_message" placeholder="Précisions sur votre commande, questions..."></textarea>
+          </div>
+          <button class="btn-submit-order" onclick="submitOrder()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            Confirmer la commande via WhatsApp </button> </div>
+      </div>
+    </div>
+    <!-- SUCCESS MODAL -->
+    <div class="overlay" id="successOverlay">
+      <div class="modal">
+        <div class="modal-header" style="justify-content:flex-end"> <button class="modal-close"
+            onclick="closeOverlay('successOverlay')">✕</button> </div>
+        <div class="modal-body">
+          <div class="success-icon">🎉</div>
+          <div class="success-msg">
+            <h2>Commande enregistrée !</h2>
+            <p>Votre commande a bien été prise en compte. Voici les prochaines
+              étapes pour finaliser votre achat.</p>
+          </div>
+          <div class="order-ref" id="orderRef">
+            <div class="ref-label">Numéro de référence</div>
+            <div class="ref-num" id="refNum">TSB-000000</div>
+          </div>
+          <div class="confirm-steps">
+            <div class="confirm-step"> <span class="icon">📲</span> <span>Effectuez
+                votre paiement MTN MoMo au <strong>+229 01 62 44 75 97</strong>
+                (TechShop BJ) en indiquant votre référence commande.</span> </div>
+            <div class="confirm-step"> <span class="icon">📸</span> <span>Prenez
+                une capture de votre reçu de paiement MTN.</span> </div>
+            <div class="confirm-step"> <span class="icon">💬</span> <span>Envoyez
+                la capture + votre référence sur WhatsApp. Votre commande sera
+                confirmée rapidement.</span> </div>
+          </div>
+          <button class="btn-confirm-whatsapp" id="btnConfirmWA">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            Envoyer mon reçu sur WhatsApp </button> <button class="btn-close-success"
+            onclick="closeOverlay('successOverlay')">Fermer et continuer mes
+            achats</button> </div>
+      </div>
+    </div>
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-head">
+        <h3>🛒 Mon panier</h3>
+        <button class="cart-close" onclick="closeCart()">✕</button> </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer" id="cartFooter" style="display:none">
+        <div class="cart-total-row"> <span class="cart-total-label">Total</span>
+          <span class="cart-total-amount" id="cartTotal">0 FCFA</span> </div>
+        <button class="btn-checkout" onclick="closeCart();openOrderForm([])"> ✅
+          Passer la commande </button> <button class="btn-continue-shopping" onclick="closeCart()">Continuer
+          mes achats</button> </div>
+    </div>
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"> <span class="t-icon" id="toastIcon">✅</span>
+      <span id="toastMsg">Produit ajouté au panier</span>
+    </div>
+    <script>
+// =========================================
+// PRODUCT DATABASE
+// =========================================
+const PHONE = '+22901624475 97'.replace(/\s/g,'');
+const WA_NUM = '22901624475 97'.replace(/\s/g,'');
+
+const products = [
+  // MICROSOFT LICENCES
+  {id:1,name:'Windows 11 Pro — Licence Lifetime',cat:'ms',price:15000,old:35000,icon:'🪟',bg:'ms-bg',badge:'lifetime',
+   features:['Activation en ligne officielle','Compatible tout PC récent','Mises à jour incluses à vie','Support Microsoft direct','Clé envoyée par e-mail/WhatsApp'],
+   desc:'Clé d\'activation originale Windows 11 Pro à vie. Garantie 100% authentique. Envoi par e-mail ou WhatsApp dans l\'heure suivant le paiement.'},
+  {id:2,name:'Microsoft Office 2021 Pro Plus',cat:'ms',price:20000,old:55000,icon:'📊',bg:'ms-bg',badge:'lifetime',
+   features:['Word, Excel, PowerPoint, Outlook','OneNote, Publisher, Access','Licence permanente 1 PC','Pas d\'abonnement mensuel','Clé numérique envoyée rapidement'],
+   desc:'Suite complète Microsoft Office 2021 Pro Plus. Comprend Word, Excel, PowerPoint, Outlook, OneNote, Publisher et Access. Licence définitive pour 1 PC.'},
+  {id:3,name:'Windows 10 Pro — Licence Lifetime',cat:'ms',price:10000,old:25000,icon:'🖥️',bg:'ms-bg',badge:'promo',
+   features:['Activation en ligne','Compatible PC 32 & 64 bits','Mises à jour sécurité incluses','Support technique disponible','Envoi immédiat après paiement'],
+   desc:'Clé Windows 10 Pro originale et activable en ligne. Parfait pour les professionnels et entreprises. Compatible 32 et 64 bits.'},
+  {id:4,name:'Microsoft 365 Personnel — 1 an',cat:'ms',price:12000,old:null,icon:'☁️',bg:'ms-bg',badge:null,
+   features:['Apps Office dernière version','1 To stockage OneDrive','1 PC ou Mac + 1 tablette','Collaboration en temps réel','Mises à jour automatiques'],
+   desc:'Accès complet à toutes les applications Office + 1 To OneDrive pendant 12 mois. Toujours la dernière version des apps.'},
+  {id:5,name:'Microsoft 365 Famille — 1 an',cat:'ms',price:20000,old:null,icon:'👨‍👩‍👧‍👦',bg:'ms-bg',badge:'new',
+   features:['Jusqu\'à 6 utilisateurs','6 To stockage total','PC, Mac, tablette, mobile','Apps mobiles incluses','Assistance Microsoft prioritaire'],
+   desc:'La solution Office complète pour toute la famille. Jusqu\'à 6 personnes peuvent utiliser Office sur tous leurs appareils.'},
+  {id:6,name:'Windows Server 2022 Standard',cat:'ms',price:45000,old:null,icon:'🗄️',bg:'ms-bg',badge:'hot',
+   features:['Licence commerciale originale','Jusqu\'à 16 cœurs CPU','Virtualisation incluse','Support 5 ans garanti','Idéal PME et entreprises'],
+   desc:'Système d\'exploitation serveur professionnel Microsoft. Idéal pour les PME, hébergement et virtualisation.'},
+  {id:7,name:'Visual Studio Professional 2022',cat:'ms',price:35000,old:null,icon:'💻',bg:'ms-bg',badge:null,
+   features:['IDE complet pour développeurs','Support .NET, Python, JS','Débogage avancé','Contrôle de version intégré','Licence individuelle lifetime'],
+   desc:'L\'IDE professionnel Microsoft pour les développeurs. Développez des apps web, mobiles, desktop en une seule plateforme.'},
+  {id:8,name:'Windows 11 Home — Licence Lifetime',cat:'ms',price:10000,old:20000,icon:'🏠',bg:'ms-bg',badge:'promo',
+   features:['Idéal pour usage personnel','Interface moderne','Support jeux Xbox intégré','Sécurité Windows Hello','Clé envoyée sous 1h'],
+   desc:'Windows 11 Home pour les particuliers. Interface moderne, sécurité renforcée et intégration Xbox pour les jeux.'},
+
+  // INFORMATIQUE
+  {id:9,name:'Laptop HP 15 — Core i5 8Go 256Go',cat:'info',price:280000,old:null,icon:'💻',bg:'info-bg',badge:'new',
+   features:['Intel Core i5 11ème génération','8 Go RAM DDR4','256 Go SSD rapide','Écran 15.6" Full HD','Windows 11 Pro inclus','Batterie 7h autonomie'],
+   desc:'Ordinateur portable HP performant pour la bureautique et le multimédia. Processeur Intel Core i5, démarrage ultra-rapide grâce au SSD.'},
+  {id:10,name:'PC Bureau Lenovo Core i3 + Écran 21"',cat:'info',price:175000,old:200000,icon:'🖥️',bg:'info-bg',badge:'promo',
+   features:['Intel Core i3 10ème génération','8 Go RAM','500 Go HDD ou 256 Go SSD','Écran 21 pouces inclus','Clavier et souris fournis','Windows 11 Pro inclus'],
+   desc:'Ordinateur de bureau complet Lenovo avec écran, clavier et souris. Parfait pour le bureau, les entreprises et les particuliers.'},
+  {id:11,name:'Laptop Dell Inspiron — Core i7 16Go',cat:'info',price:420000,old:null,icon:'💻',bg:'info-bg',badge:'hot',
+   features:['Intel Core i7 12ème génération','16 Go RAM DDR5','512 Go SSD NVMe','Écran 15.6" FHD IPS','GPU intégré Intel Iris Xe','Windows 11 Pro inclus'],
+   desc:'Laptop Dell haute performance pour les professionnels exigeants. Processeur Core i7, RAM 16Go et SSD ultra-rapide.'},
+  {id:12,name:'Ordinateur portable Asus VivoBook i5',cat:'info',price:250000,old:280000,icon:'💻',bg:'info-bg',badge:'promo',
+   features:['Intel Core i5','8 Go RAM','512 Go SSD','Écran 14" FHD','Poids léger 1.5 kg','Autonomie 8h'],
+   desc:'Ultrabook Asus léger et rapide. Idéal pour les étudiants et professionnels en déplacement.'},
+  {id:13,name:'Clé USB 128 Go USB 3.2 Sandisk',cat:'info',price:8000,old:null,icon:'🔌',bg:'info-bg',badge:null,
+   features:['Vitesse lecture 150 MB/s','Capacité 128 Go','Format compact','Compatible PC & Mac','Garantie 5 ans Sandisk'],
+   desc:'Clé USB 3.2 haute vitesse Sandisk. Transferts rapides pour vos fichiers, photos et vidéos.'},
+  {id:14,name:'Disque dur externe 1 To Seagate',cat:'info',price:25000,old:null,icon:'💾',bg:'info-bg',badge:null,
+   features:['Capacité 1 Téraoctet','USB 3.0 plug & play','Compact et portable','Compatible Windows & Mac','Garantie 2 ans'],
+   desc:'Disque dur externe portable Seagate 1 To. Sauvegardez toutes vos données en toute sécurité.'},
+
+  // ELECTROMENAGER
+  {id:15,name:'Réfrigérateur Samsung No Frost 320L',cat:'electro',price:380000,old:null,icon:'🧊',bg:'electro-bg',badge:'new',
+   features:['Capacité 320 litres','Technologie No Frost','Classe énergie A+','Compartiment freezer','Livraison + installation incluses','Garantie 2 ans Samsung'],
+   desc:'Réfrigérateur double porte Samsung, technologie No Frost pour zéro givre. Livraison et installation incluses à Cotonou.'},
+  {id:16,name:'Climatiseur LG 1.5 CV Dual Inverter',cat:'electro',price:290000,old:340000,icon:'❄️',bg:'electro-bg',badge:'promo',
+   features:['Puissance 1.5 CV','Technologie Dual Inverter','Économie d\'énergie -70%','Télécommande incluse','Mode ventilation et chauffage','Garantie 3 ans compresseur'],
+   desc:'Climatiseur LG inverter ultra-économique. Refroidissement rapide et silencieux. Installation comprise à Cotonou.'},
+  {id:17,name:'Machine à laver Samsung 7 kg',cat:'electro',price:250000,old:null,icon:'🫧',bg:'electro-bg',badge:'new',
+   features:['Capacité 7 kg','15 programmes de lavage','Technologie Eco Bubble','Moteur Digital Inverter','Classe énergie A++','Garantie 2 ans Samsung'],
+   desc:'Lave-linge Samsung avec technologie Eco Bubble pour des vêtements propres en consommant moins d\'énergie.'},
+  {id:18,name:'Télévision Sony 43" 4K Smart TV',cat:'electro',price:320000,old:null,icon:'📺',bg:'electro-bg',badge:'hot',
+   features:['Taille 43 pouces','Résolution 4K Ultra HD','Android TV intégré','WiFi et Bluetooth','Netflix, YouTube inclus','Garantie 2 ans Sony'],
+   desc:'Smart TV Sony 43 pouces avec Android TV. Accédez à tous vos contenus favoris en qualité 4K.'},
+  {id:19,name:'Microonde Samsung 23L Grill',cat:'electro',price:65000,old:80000,icon:'🍳',bg:'electro-bg',badge:'promo',
+   features:['Capacité 23 litres','Fonction grill intégrée','12 programmes automatiques','Minuterie digitale','Nettoyage facile','Garantie 1 an'],
+   desc:'Four micro-onde Samsung avec fonction grill. Chauffage rapide et cuisson grillée pour toute la famille.'},
+  {id:20,name:'Ventilateur de plafond + lumière',cat:'electro',price:35000,old:null,icon:'💨',bg:'electro-bg',badge:null,
+   features:['3 vitesses réglables','Éclairage LED intégré','Télécommande incluse','Installation facile','Silencieux','Garantie 1 an'],
+   desc:'Ventilateur de plafond avec éclairage LED intégré. Idéal pour rafraîchir et éclairer simultanément une pièce.'},
+
+  // LOGICIELS
+  {id:21,name:'Antivirus Kaspersky Total 2025',cat:'soft',price:12000,old:null,icon:'🛡️',bg:'soft-bg',badge:null,
+   features:['Protection temps réel','Anti-ransomware avancé','VPN 300 Mo/jour inclus','Gestionnaire de mots de passe','1 an / 1 appareil','Mises à jour automatiques'],
+   desc:'Protection complète Kaspersky contre virus, ransomwares, phishing et espions. Avec VPN intégré.'},
+  {id:22,name:'Adobe Acrobat Pro 2024 Lifetime',cat:'soft',price:22000,old:45000,icon:'📄',bg:'soft-bg',badge:'lifetime',
+   features:['Création PDF professionnelle','Édition et modification','Signature électronique','OCR pour PDF scannés','Compression de fichiers','Licence permanente 1 PC'],
+   desc:'Le logiciel PDF professionnel par excellence. Créez, éditez, signez et gérez tous vos documents PDF.'},
+  {id:23,name:'AutoCAD LT 2024 — Licence 1 an',cat:'soft',price:85000,old:null,icon:'📐',bg:'soft-bg',badge:'hot',
+   features:['Dessins 2D professionnels','Bibliothèque de blocs étendue','Partage en ligne DWG','Accès cloud inclus','Support technique Autodesk','Mise à jour incluse'],
+   desc:'Le logiciel de dessin technique CAO le plus utilisé au monde. Idéal pour architectes, ingénieurs et techniciens.'},
+  {id:24,name:'CorelDRAW Graphics Suite 2024',cat:'soft',price:30000,old:null,icon:'🎨',bg:'soft-bg',badge:'new',
+   features:['Design vectoriel professionnel','Retouche photo intégrée','Mise en page puissante','600+ polices et modèles','Export multi-formats','Licence permanente'],
+   desc:'Suite graphique complète pour designers. Création de logos, affiches, brochures et illustrations vectorielles.'},
+  {id:25,name:'Sage Comptabilité 100 Cloud',cat:'soft',price:50000,old:null,icon:'📈',bg:'soft-bg',badge:null,
+   features:['Comptabilité générale complète','Facturation et devis','Gestion TVA automatique','Rapports et bilans','Multi-utilisateurs','Support en français'],
+   desc:'Logiciel de comptabilité professionnel pour PME. Gestion complète de votre comptabilité et facturation.'},
+
+  // ACCESSOIRES
+  {id:26,name:'Souris sans fil Logitech MX Master 3',cat:'accessoire',price:28000,old:null,icon:'🖱️',bg:'info-bg',badge:null,
+   features:['Capteur 4000 DPI','Autonomie 70 jours','Connexion USB-C & Bluetooth','Multi-appareils (3 max)','Défilement ultrarapide','Ergonomique droitier'],
+   desc:'La souris sans fil professionnelle ultime de Logitech. Précision exceptionnelle et confort pour de longues sessions.'},
+  {id:27,name:'Clavier mécanique Redragon K552',cat:'accessoire',price:22000,old:null,icon:'⌨️',bg:'info-bg',badge:'new',
+   features:['Switches mécaniques Red','Rétroéclairage RGB','Format TKL compact','Anti-ghosting complet','Construction métal','Compatible Windows/Mac'],
+   desc:'Clavier mécanique gaming avec switches Red ultra-réactifs. Parfait pour les gamers et professionnels exigeants.'},
+  {id:28,name:'Écran PC LG 24" FHD IPS',cat:'accessoire',price:95000,old:110000,icon:'🖥️',bg:'info-bg',badge:'promo',
+   features:['Taille 24 pouces','Résolution Full HD 1080p','Dalle IPS couleurs précises','60 Hz taux de rafraîchissement','HDMI + DisplayPort + VGA','Réglable en hauteur'],
+   desc:'Écran PC LG 24 pouces IPS Full HD. Couleurs fidèles et angles de vision larges, idéal pour le bureau.'},
+  {id:29,name:'Webcam Logitech C920 HD Pro',cat:'accessoire',price:30000,old:null,icon:'📷',bg:'info-bg',badge:null,
+   features:['Résolution 1080p Full HD','Autofocus intégré','Microphone stéréo','Compatible Zoom, Teams','Connexion USB plug & play','Correction automatique lumière'],
+   desc:'La webcam HD professionnelle pour vos visioconférences et streaming. Qualité vidéo Full HD avec autofocus.'},
+
+  // RÉSEAU
+  {id:30,name:'Routeur WiFi TP-Link Archer AX73',cat:'reseau',price:75000,old:null,icon:'📡',bg:'info-bg',badge:'new',
+   features:['WiFi 6 AX5400','Bandes dual 2.4 GHz + 5 GHz','Portée jusqu\'à 250 m²','6 antennes externes','USB 3.0 partage réseau','Parental controls inclus'],
+   desc:'Routeur WiFi 6 haut débit pour couvrir toute votre maison ou bureau. Connexion ultra-rapide pour tous vos appareils.'},
+  {id:31,name:'Switch réseau TP-Link 8 ports Gigabit',cat:'reseau',price:18000,old:null,icon:'🔀',bg:'info-bg',badge:null,
+   features:['8 ports Gigabit 1000 Mbps','Plug & play sans configuration','Boîtier métal robuste','QoS automatique','Faible consommation','Garantie 3 ans'],
+   desc:'Switch réseau non géré 8 ports Gigabit pour connecter tous vos équipements en réseau local.'},
+  {id:32,name:'Répéteur WiFi TP-Link RE600X WiFi 6',cat:'reseau',price:28000,old:null,icon:'📶',bg:'info-bg',badge:null,
+   features:['WiFi 6 AX1800','Élargit votre réseau existant','Installation en 1 minute','Application TP-Link Tether','Signal Gigabit passthrough','Dual band 2.4 + 5 GHz'],
+   desc:'Répéteur WiFi 6 pour étendre la couverture de votre réseau sans fil dans toute votre maison.'},
+
+  // TÉLÉPHONES
+  {id:33,name:'Samsung Galaxy A55 5G — 8Go/256Go',cat:'phone',price:280000,old:null,icon:'📱',bg:'info-bg',badge:'new',
+   features:['Écran Super AMOLED 6.6"','Processeur Exynos 1480','8 Go RAM / 256 Go stockage','Triple caméra 50+12+5 MP','Batterie 5000 mAh','5G compatible','Android 14'],
+   desc:'Smartphone Samsung Galaxy A55 5G puissant avec écran AMOLED sublime et triple caméra performante.'},
+  {id:34,name:'iPhone 15 — 128Go (reconditionné A+)',cat:'phone',price:420000,old:550000,icon:'📱',bg:'info-bg',badge:'promo',
+   features:['État reconditionné Grade A+','Dynamic Island','Camera 48 MP','Puce A16 Bionic','USB-C charge rapide','iOS 17','Garantie 6 mois'],
+   desc:'iPhone 15 reconditionné Grade A+ en excellent état. Toutes fonctionnalités originales Apple avec garantie.'},
+  {id:35,name:'Tecno Spark 20 Pro — 8Go/256Go',cat:'phone',price:95000,old:null,icon:'📱',bg:'info-bg',badge:'hot',
+   features:['Écran AMOLED 6.78"','8 Go RAM','256 Go stockage extensible','Caméra 108 MP','Batterie 5000 mAh','Charge rapide 18W','Android 13'],
+   desc:'Le meilleur rapport qualité/prix avec Tecno Spark 20 Pro. Caméra 108 MP et grande batterie pour un usage quotidien intensif.'},
+  {id:36,name:'Itel A70 — Téléphone entrée de gamme',cat:'phone',price:35000,old:null,icon:'📱',bg:'electro-bg',badge:null,
+   features:['Écran HD+ 6.6"','4 Go RAM','128 Go stockage','Batterie 5000 mAh','Double SIM','Android 13 Go Edition','Idéal premier téléphone'],
+   desc:'Smartphone Itel accessible et fiable pour les usages quotidiens. Batterie longue durée et grande capacité de stockage.'},
+];
+
+// =========================================
+// CART STATE
+// =========================================
+let cart = []; // [{id, qty}]
+
+function getCartTotal() {
+  return cart.reduce((sum, item) => {
+    const p = products.find(x => x.id === item.id);
+    return sum + (p ? p.price * item.qty : 0);
+  }, 0);
+}
+
+function getCartCount() {
+  return cart.reduce((sum, item) => sum + item.qty, 0);
+}
+
+function updateCartBadge() {
+  const count = getCartCount();
+  document.getElementById('cartBadge').textContent = count;
+}
+
+function addToCart(id) {
+  const existing = cart.find(x => x.id === id);
+  if (existing) existing.qty++;
+  else cart.push({id, qty: 1});
+  updateCartBadge();
+  renderCart();
+  showToast('✅', 'Produit ajouté au panier');
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(x => x.id !== id);
+  updateCartBadge();
+  renderCart();
+}
+
+function changeQty(id, delta) {
+  const item = cart.find(x => x.id === id);
+  if (!item) return;
+  item.qty = Math.max(1, item.qty + delta);
+  updateCartBadge();
+  renderCart();
+}
+
+function formatPrice(n) {
+  return n.toLocaleString('fr-FR') + ' FCFA';
+}
+
+function discountPct(p) {
+  if (!p.old) return null;
+  return Math.round((1 - p.price / p.old) * 100);
+}
+
+// =========================================
+// RENDER PRODUCTS
+// =========================================
+function renderProduct(p, btnLabel) {
+  const disc = discountPct(p);
+  return `<div class="product-card" id="pcard-${p.id}">
+    <div class="product-img ${p.bg}">
+      ${p.badge ? `<span class="p-badge badge-${p.badge}">${p.badge==='lifetime'?'LIFETIME':p.badge==='promo'?'PROMO':p.badge==='new'?'NOUVEAU':'🔥 POPULAIRE'}</span>` : ''}
+      <button class="wishlist-btn" onclick="event.stopPropagation();showToast('❤️','Ajouté aux favoris')" title="Favori">♡</button>
+      ${p.icon}
+    </div>
+    <div class="product-body">
+      <div class="product-name">${p.name}</div>
+      <div class="product-cat-tag">${{ms:'🪟 Licence Microsoft',info:'💻 Informatique',electro:'🏠 Électroménager',soft:'🧩 Logiciel',accessoire:'🖱️ Accessoire',reseau:'📡 Réseau',phone:'📱 Téléphone'}[p.cat]}</div>
+      <div class="product-price-row">
+        <span class="price-current">${formatPrice(p.price)}</span>
+        ${p.old ? `<span class="price-old">${formatPrice(p.old)}</span>` : ''}
+        ${disc ? `<span class="discount-pct">-${disc}%</span>` : ''}
+      </div>
+      <div class="product-actions">
+        <button class="btn-add" id="add-${p.id}" onclick="event.stopPropagation();addToCart(${p.id});animateAdd(${p.id})">+ Panier</button>
+        <button class="btn-detail" onclick="openDetail(${p.id})">Détails</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function animateAdd(id) {
+  const btn = document.getElementById(`add-${id}`);
+  if (!btn) return;
+  btn.textContent = '✓ Ajouté !';
+  btn.classList.add('added');
+  setTimeout(() => {
+    btn.textContent = '+ Panier';
+    btn.classList.remove('added');
+  }, 1400);
+}
+
+const CAT_LABELS = {
+  ms:'🪟 Licences Microsoft',
+  info:'💻 Matériels Informatiques',
+  electro:'🏠 Électroménager',
+  soft:'🧩 Logiciels & Sécurité',
+  accessoire:'🖱️ Accessoires',
+  reseau:'📡 Réseau & WiFi',
+  phone:'📱 Téléphones'
+};
+
+function renderSection(cat, gridId) {
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+  const list = products.filter(p => p.cat === cat);
+  grid.innerHTML = list.map(p => renderProduct(p)).join('');
+}
+
+function showAllSections() {
+  document.getElementById('filter-section').style.display = 'none';
+  document.getElementById('home-sections').style.display = '';
+  document.getElementById('searchInput').value = '';
+  document.querySelectorAll('.nav-inner button').forEach((b,i) => b.classList.toggle('active', i===0));
+}
+
+function filterCat(cat, btn) {
+  document.querySelectorAll('.nav-inner button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('searchInput').value = '';
+
+  if (cat === 'all') {
+    showAllSections();
+    return;
+  }
+
+  document.getElementById('home-sections').style.display = 'none';
+  document.getElementById('filter-section').style.display = '';
+  document.getElementById('filter-title').innerHTML = CAT_LABELS[cat] || cat;
+  const grid = document.getElementById('filter-grid');
+  const list = products.filter(p => p.cat === cat);
+  grid.innerHTML = list.map(p => renderProduct(p)).join('');
+}
+
+function handleSearch(val) {
+  val = val.trim().toLowerCase();
+  if (!val) { showAllSections(); return; }
+
+  document.querySelectorAll('.nav-inner button').forEach(b => b.classList.remove('active'));
+  document.getElementById('home-sections').style.display = 'none';
+  document.getElementById('filter-section').style.display = '';
+  document.getElementById('filter-title').textContent = `Résultats pour "${val}"`;
+
+  const results = products.filter(p =>
+    p.name.toLowerCase().includes(val) ||
+    p.desc.toLowerCase().includes(val) ||
+    p.cat.toLowerCase().includes(val)
+  );
+  const grid = document.getElementById('filter-grid');
+  grid.innerHTML = results.length
+    ? results.map(p => renderProduct(p)).join('')
+    : '<p style="color:var(--muted);grid-column:1/-1;padding:40px 0;text-align:center;font-size:15px">Aucun produit trouvé.</p>';
+}
+
+// =========================================
+// PRODUCT DETAIL
+// =========================================
+function openDetail(id) {
+  const p = products.find(x => x.id === id);
+  document.getElementById('detailTitle').textContent = p.name;
+  const disc = discountPct(p);
+  document.getElementById('detailBody').innerHTML = `
+    <div class="detail-img ${p.bg}">${p.icon}</div>
+    <div class="detail-price">${formatPrice(p.price)}</div>
+    ${p.old ? `<div class="detail-price-old">${formatPrice(p.old)} ${disc?`<span class="discount-pct">-${disc}%</span>`:''}</div>` : ''}
+    <p class="detail-desc">${p.desc}</p>
+    <div class="detail-features">
+      <h4>Ce qui est inclus :</h4>
+      ${p.features.map(f => `<div class="feature-item">${f}</div>`).join('')}
+    </div>
+    <div class="mtn-pay-box">
+      <div class="mtn-circle">MTN</div>
+      <div class="mtn-pay-info">
+        <div class="lbl">Payer via MTN Mobile Money</div>
+        <div class="val">+229 01 62 44 75 97</div>
+      </div>
+    </div>
+    <button class="btn-order-now" onclick="closeOverlay('detailOverlay');openOrderForm([${id}])">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Commander maintenant
+    </button>
+    <button class="btn-add-cart-modal" onclick="addToCart(${id});closeOverlay('detailOverlay')">+ Ajouter au panier</button>
+  `;
+  openOverlay('detailOverlay');
+}
+
+// =========================================
+// ORDER FORM
+// =========================================
+let orderItems = [];
+let selectedPayment = 'mtn';
+
+function selectPayment(type) {
+  selectedPayment = type;
+  document.getElementById('opt-mtn').classList.toggle('selected', type==='mtn');
+  document.getElementById('opt-wa').classList.toggle('selected', type==='wa');
+}
+
+function openOrderForm(ids) {
+  orderItems = ids.length > 0 ? ids : cart.map(x => x.id);
+  if (orderItems.length === 0 && cart.length > 0) orderItems = cart.map(x => x.id);
+
+  const summary = document.getElementById('orderSummary');
+  let total = 0;
+  const itemsHtml = orderItems.map(id => {
+    const p = products.find(x => x.id === id);
+    if (!p) return '';
+    const qty = cart.find(c => c.id === id)?.qty || 1;
+    total += p.price * qty;
+    return `<div class="order-item">
+      <span class="name">${p.icon} ${p.name} ${qty > 1 ? `x${qty}` : ''}</span>
+      <span class="price">${formatPrice(p.price * qty)}</span>
+    </div>`;
+  }).join('');
+
+  summary.innerHTML = `
+    <h4>📦 Récapitulatif de votre commande</h4>
+    ${itemsHtml}
+    <div class="order-total">
+      <span class="label">Total articles</span>
+      <span class="total">${formatPrice(total)}</span>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:6px">+ Frais de livraison selon votre zone</p>
+  `;
+  openOverlay('orderOverlay');
+}
+
+function submitOrder() {
+  const name = document.getElementById('f_name').value.trim();
+  const phone = document.getElementById('f_phone').value.trim();
+  const address = document.getElementById('f_address').value.trim();
+  const delivery = document.getElementById('f_delivery').value;
+
+  if (!name) { showToast('⚠️','Veuillez entrer votre nom'); return; }
+  if (!phone) { showToast('⚠️','Veuillez entrer votre téléphone'); return; }
+  if (!address) { showToast('⚠️','Veuillez entrer votre ville/quartier'); return; }
+  if (!delivery) { showToast('⚠️','Veuillez choisir un mode de livraison'); return; }
+
+  const ref = 'TSB-' + Date.now().toString().slice(-6);
+  const wa = document.getElementById('f_whatsapp').value.trim() || phone;
+  const msg = document.getElementById('f_message').value.trim();
+
+  // Build WhatsApp message
+  let total = orderItems.reduce((sum, id) => {
+    const p = products.find(x => x.id === id);
+    const qty = cart.find(c => c.id === id)?.qty || 1;
+    return sum + (p ? p.price * qty : 0);
+  }, 0);
+
+  const itemLines = orderItems.map(id => {
+    const p = products.find(x => x.id === id);
+    const qty = cart.find(c => c.id === id)?.qty || 1;
+    return p ? `- ${p.name} x${qty} : ${formatPrice(p.price * qty)}` : '';
+  }).filter(Boolean).join('\n');
+
+  const deliveryLabels = {
+    livraison_cotonou:'Livraison domicile Cotonou',
+    livraison_interieur:'Livraison intérieur Bénin',
+    email:'Envoi email/WhatsApp',
+    retrait:'Retrait en boutique'
+  };
+
+  const waMessage = `🛒 *NOUVELLE COMMANDE — TechShop BJ*\n\n`+
+    `📋 *Référence :* ${ref}\n\n`+
+    `👤 *Client :* ${name}\n`+
+    `📞 *Téléphone :* ${phone}\n`+
+    `💬 *WhatsApp :* ${wa}\n`+
+    `📍 *Adresse :* ${address}\n`+
+    `🚚 *Livraison :* ${deliveryLabels[delivery]||delivery}\n\n`+
+    `📦 *Produits commandés :*\n${itemLines}\n\n`+
+    `💰 *Total :* ${formatPrice(total)}\n`+
+    `💳 *Paiement :* MTN MoMo au +229 01 62 44 75 97\n`+
+    (msg ? `\n📝 *Message :* ${msg}\n` : '')+
+    `\n✅ Je vais effectuer le paiement MTN MoMo et vous envoyer le reçu.`;
+
+  // Show success modal
+  closeOverlay('orderOverlay');
+  document.getElementById('refNum').textContent = ref;
+
+  const waLink = `https://wa.me/${WA_NUM}?text=${encodeURIComponent(waMessage)}`;
+  document.getElementById('btnConfirmWA').onclick = () => window.open(waLink, '_blank');
+
+  openOverlay('successOverlay');
+
+  // Clear cart
+  cart = [];
+  updateCartBadge();
+  renderCart();
+}
+
+// =========================================
+// CART SIDEBAR
+// =========================================
+function renderCart() {
+  const container = document.getElementById('cartItems');
+  const footer = document.getElementById('cartFooter');
+
+  if (cart.length === 0) {
+    container.innerHTML = `<div class="cart-empty"><div class="icon">🛒</div><p>Votre panier est vide</p></div>`;
+    footer.style.display = 'none';
+    return;
+  }
+
+  footer.style.display = '';
+  container.innerHTML = cart.map(item => {
+    const p = products.find(x => x.id === item.id);
+    if (!p) return '';
+    return `<div class="cart-item">
+      <div class="cart-item-icon">${p.icon}</div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">${p.name}</div>
+        <div class="cart-item-price">${formatPrice(p.price)}</div>
+        <div class="cart-qty">
+          <button class="qty-btn" onclick="changeQty(${p.id},-1)">−</button>
+          <span class="qty-num">${item.qty}</span>
+          <button class="qty-btn" onclick="changeQty(${p.id},1)">+</button>
+        </div>
+      </div>
+      <button class="cart-item-remove" onclick="removeFromCart(${p.id})" title="Supprimer">🗑</button>
+    </div>`;
+  }).join('');
+
+  document.getElementById('cartTotal').textContent = formatPrice(getCartTotal());
+}
+
+function openCart() {
+  document.getElementById('cartOverlay').classList.add('open');
+  document.getElementById('cartPanel').classList.add('open');
+}
+
+function closeCart() {
+  document.getElementById('cartOverlay').classList.remove('open');
+  document.getElementById('cartPanel').classList.remove('open');
+}
+
+// =========================================
+// MODALS
+// =========================================
+function openOverlay(id) {
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeOverlay(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.overlay').forEach(o => {
+  o.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeOverlay(this.id);
+    }
+  });
+});
+
+// =========================================
+// WHATSAPP
+// =========================================
+function openWhatsApp(msg) {
+  window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+// =========================================
+// TOAST
+// =========================================
+function showToast(icon, msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastIcon').textContent = icon;
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// =========================================
+// SCROLL TOP
+// =========================================
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTop');
+  btn.classList.toggle('visible', window.scrollY > 400);
+});
+
+// =========================================
+// INIT
+// =========================================
+renderSection('ms','ms-grid');
+renderSection('info','info-grid');
+renderSection('electro','electro-grid');
+renderSection('soft','soft-grid');
+renderSection('accessoire','accessoire-grid');
+renderSection('reseau','reseau-grid');
+renderSection('phone','phone-grid');
+renderCart();
+</script>
+  </body>
+</html>
